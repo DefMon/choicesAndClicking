@@ -1,0 +1,11 @@
+<div id="population" class="showTip <%if(villagers.length === 0) {%>hidden<%}%>">
+	<span>Population:</span>
+	<span><%=pop%><%if(popCap > 0) {%>/<%=popCap%><%}%></span></div>
+<div class="tooltip noborder">
+	<ol id="villagers" class="tripleColumn villagerList">
+		<li>You</li>
+		<% _.each(villagers, function(villager) { %>  <li><%= villager.name %></li> <% }); %>
+	</ol>
+</div>
+<div class="hidden"><span>Consumption:</span><span><%=consumption%></span></div>
+<div class="hidden"><span>Season:</span><span><%=season%></span></div>

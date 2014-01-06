@@ -1,0 +1,113 @@
+
+THIS WEEKEND
+	Christmas shopping
+		Dad: ? (Celine Dion)
+		ToBi: Midget gems (&Headphones)
+		Felix: Blocks (Books)
+		Fliss: knitting thing
+		Harry: ???????
+		Emma: *****
+		Mum: (Teddy Robinson)
+		Charlotte: (armband)
+		???????
+		Emzy: Evening with Neil and Amanda
+		Tom: Flash thing
+		Matt: 
+
+GAME STUCTURE
+	Event: You are alone
+		Unlock: Food, forage
+	n food -> Event: Get wood
+		Unlock: Wood, chop, wooden hut
+	n wood -> Event: Volcano
+	m wood -> Event: Shipwreck Survivor
+		Unlock: Random events, Forager
+	hut built -> Event: Language
+		Unlock: Farm, Rope, Ropemaker, Wooden axes 
+	wooden axes -> Event: Village Survivor
+		Unlock: Stone, Stone axes
+
+TO DO
+
+	Functionality	
+		Unlock events based on resources gathered
+
+	Bugs
+		MEMORY IS CRAZY BISCUITS
+		Improvements: Inserting a nested modification when the original property doesn't exist adds the array where it should apply the modification to a base of 0 
+			- Consider changing all modifications to the array structure (with = as an operator) and remove the "doesn't exist" shortcut
+
+		If there are no villagers left, events that need a villager need to be blocked.
+			- And as an extension, what about events that want more than 1 villager1
+
+		Consumption doesn't seem to update in response to events after the first one
+		Population counts you but can go to 0
+		Can get negative workers and starvation can crash the game
+
+		Checking for villagers in the memory check uses name when it should use some sort of id
+
+		Veil seems short on load?
+
+	Presentation
+		Basic styling
+		Action cooldown display
+		Fadeout old Feed messges
+		Introduce interface gradually over time
+		Things are added to the end of their respective lists as they are created, but then when the page is reloaded they are ordered. Order should be fixed no matter what.
+		Seasons
+		Capitalisation on pronouns
+		Pronouns in Event buttons?
+
+	Functionality
+		Consider making Pop Growth scale up with PopCap? Or removing natural Pop Growth
+		Give "You have starved" an effect
+		Retroactive benefits from building improvements?
+		Unlocks based on pop? (YAGNI?)
+		Unlocks based on culture?
+		Resource actions associated with Finite resources? (YAGNI?)
+		Documentation
+		Break up Upgrades into subgroups?
+		Break resources up into actual resources and notional ones?
+		Show income and income sources on Resources
+		Count times an event choice is made
+		Unlock events based on workers
+			In fact, just be able to check if an event should be triggered based on an arbitrary factor and trigger somethign else if not
+		Upgrade Destruction
+		Finite resources
+		Culture groups
+		Prevent two villagers having the same name? Just increase the options to make it statistically unlikely?
+		Ability to ask for specific types of villager 
+			But this also requires limiting events to triggering when they are available
+		Seasons
+		Prevent event memory from just remembering everything. It is wasteful.
+		Unlock locked prerequesites if a child event becomes locked.
+		Starvation approaching warning
+		Remove you have starved, but add in a new "You are alone" if all villagers are gone
+		What if they close the window without resolving an important event?
+
+	Testing
+		Locking/unlocking events with tech trees is really complicated. and needs some serious testing
+		Destruction needs some serious testing
+
+	Refactor
+		Extract Template files
+		Optimize income over time?
+		Optimize improvements?
+		Add error handling
+		Villagers should probably be a Backbone Model instead of a regular array
+		Tech Tree unlocks are pretty much copy pastes, they should share functions
+		The Village collection is a horrible hack to get around saving the village. Do somethign better.
+		An array to define operator and value for modifications is silly, should just be two parameters
+		Replace subscriptions hard coded strings with references to G
+		Replace selectors with referneces to G
+		Consider moving the responsibility for memory onto Villagers instead of events
+		Event controller is deeply sketchy
+		Locking/unlocking everything is awful and I hate it
+		Event choice effects are terrible and I hate them
+		Pronoun settings for villager is terrible
+	FINALLY
+		Make an actual game
+		Good stlying
+
+	Advanced styling
+		Automatically display effects
