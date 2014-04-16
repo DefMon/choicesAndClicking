@@ -1,0 +1,55 @@
+BUGS
+    Tooltip vanishes until click after a building is updated
+
+SYSTEM DESIGN
+    Consider introducing Kommand for Object functions (like onbuild for buildings) once Alex releases it
+
+GAME DESIGN
+    Cost curve isn't intuative, why would your second hut need more resources to build? Consider alternative resource sinks.
+
+FUNCTIONALITY
+
+
+MEatballs
+Eggy bread
+omelettes
+Potatoes O'Brian
+Stuffed Mushrooms
+pasta Bake
+Baked potatoes  
+
+
+Meatballs
+Passata
+3 Onions
+Kidney beans
+12 eggs
+mushrooms
+Big mushrooms
+Potatoes
+cream cheese
+Spinach
+cheddar
+Pasta bake sauce
+
+
+Kestrel Cruiser * 2
+Mantis Cruiser * 1
+
+Bismarck * 1
+Catherine * 3
+Economic * 2
+Elizabeth I * 4
+Foreign * 4
+Military * 2
+Science * 3
+Washington * 4
+
+The Lookout * 4
+The Locksmith * 3
+The Mole * 2
+The Pickpocket * 4
+The Cleaner * 4
+The Gentleman * 3
+The Redhead 
+The Hacker * 4

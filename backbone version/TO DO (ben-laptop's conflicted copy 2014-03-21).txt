@@ -1,0 +1,35 @@
+BUGS
+    Tooltip vanishes until click after a building is updated
+
+SYSTEM DESIGN
+    Consider introducing Kommand for Object functions (like onbuild for buildings) once Alex releases it
+
+GAME DESIGN
+    Cost curve isn't intuative, why would your second hut need more resources to build? Consider alternative resource sinks.
+
+FUNCTIONALITY
+
+BTL 1
+    Start Music
+    ~27, break?
+    ~40, Music
+    ~1.17, Music
+    1.28 break?
+    1.50 break?
+    1.53 Music
+    2.11 break?
+    2.27 (till end) Music
+BTL 1
+    Start Music
+    39 Music
+    1.16 Music
+    1.47 Music
+    end Music
+BTL 3
+    Start Music
+    23 break?
+    34 Music
+    49 break?
+    1.06 Music
+    1.37 Music
+    2.07 Music

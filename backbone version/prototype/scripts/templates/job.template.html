@@ -1,0 +1,16 @@
+<div class="job showTip">
+	<span class="jobTitle"><%=title%></span>
+	<span class="jobWorkers">
+		<%=count%><%if(max){%>/<%=max%><%}%>
+	</span>
+	<%if(name !== 'forager') {%>
+		<button id="<%=name%>JobUp" type="number" class="jobControl jobUp">^</button>
+		<button id="<%=name%>JobDown" type="number" class="jobControl jobDown">v</button>
+	<%}%>
+</div>
+<div class="tooltip jobTip">	
+	<%if(cost) {%>
+		<span class="jobCost cost">Cost: <%_.each(cost, function(amount, resource){%><%=amount%> <%=resource%>,<%});%></span>
+	<%}%>
+	<span class="description jobDescription"><%=description%></span>
+</div>

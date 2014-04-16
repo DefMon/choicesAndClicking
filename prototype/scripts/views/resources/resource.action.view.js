@@ -32,7 +32,7 @@ define(['Global', 'text!templates/action.button.template.html'], function(G, But
 		},
 		triggerAction: function() {
 			this.model.set('count', this.model.get('count')+1);
-			Backbone.Mediator.publish(G.events.resourceAction, this.model.get('title'), this.model.get('cost'), this.model.get('income'), this.model.get('name'), this.model.get;
+			Backbone.Mediator.publish(G.events.resourceAction, this.model.get('title'), this.model.get('cost'), this.model.get('income'), this.model.get('name'), this.model.get);
 			this.cooldown();
 		}
 	});

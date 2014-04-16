@@ -1,0 +1,4 @@
+<p><%=text%></p>
+<%_.each(choices, function(choice, index){%>
+	<button class="choiceButton" data-choicenumber="<%=index%>"><%=choice.text%></button>
+<%});%>

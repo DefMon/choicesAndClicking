@@ -1,0 +1,12 @@
+<div class="showTip building">
+	<span class="buildingName"><%=title%></span>
+	<span class="buildingCount"><%=count%></span>
+</div>
+<%if(description || cost){%>
+    <div class="tooltip buildingTip">
+        <%if(cost) {%>
+            <span class="actionCost cost">Cost: <%_.each(cost, function(amount, resource){%><%=amount%> <%=resource%>,<%});%></span>
+        <%}%>
+        <%if(description){%><span class="actionDescription description"><%=description%></span><%}%>
+    </div>
+<%}%>
