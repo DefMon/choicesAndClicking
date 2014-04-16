@@ -1,0 +1,17 @@
+I have been silent for a while. Schedules are hard, who knew? Anyway, in an effort to keep myself posting here I'm going to start posting about a progress I'm making on a project I'm working on. I whole heartedly expect this to lead to at least a few posts which are of no interest to anyone, but with any luck some of them will be good.
+
+This project is a little game, in the same vein as <a href="http://adarkroom.doublespeakgames.com/">A Dark Room</a>. I started it as a way to teach myself <a href="http://backbonejs.org/">Backbone.js</a>. This worked pretty well as a way to learn the framework, but I never really finished it. I didn't follow any sort of process with it, building something new whenver a new idea occured. This made the whole thing a bit of a mess and meant I never really finished it.
+
+This week I decided to start again, but this time use <a href="http://angularjs.org/">Angularjs</a>. I've recently moved jobs to an office which uses angular so it seemed prudent to actually learn how to use it. I'm going to use posting here as a way to try and keep myself disciplined in my approach.
+
+So. Week 0. https://www.facebook.com/groups/469547203077958/
+
+I started off with <a href="http://joshdmiller.github.io/ng-boilerplate/#/home">Angular Boilerplate</a>. This is a project which you can build on top of. It helps you out by starting with a great suite of <a href="http://gruntjs.com/">Grunt</a> plugins set up, defining a sensible project structure, and including <a href="http://getbootstrap.com/">Twitter bootstrap</a>. Basically, it gives you all sorts of cool stuff that would be boring to set up when you just want to start writing some code. 
+
+I added <a href="http://underscorejs.org/">Underscore</a> and <a href="https://github.com/agrublev/angularLocalStorage">AngularLocalStorage</a> to the vendor folder of the project. One thing which tripped me up at first was that while Angular Boilerplate does a lot of things for you, you need to add vendor files to the build.config file for grunt to find them and put them into your page.
+
+I'm probably going to switch out underscore for <a href="http://lodash.com/">lodash</a> at some point, but I've used underscore for now. Either way, I've previously talked about why <a href="http://watsonbs.wordpress.com/2012/12/16/utilitying-with-underscore-js/">they are awesome</a>.
+
+The final bit of set up I did was switch out the browser used by Karma so that it used <a href="http://phantomjs.org/">Phantomjs</a>.
+
+Next week I'll talk more about what I'm aiming for with this game, what I regard as the core functionality, and how I've implemented it

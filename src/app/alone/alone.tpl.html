@@ -1,0 +1,32 @@
+<div>
+    <h1>ALONE!</h1>
+    <div ng-controller="ResourceController">
+        <ul>
+            <li ng-repeat="resource in resources"><span>{{resource.title}}</span><span>{{resource.count}}</li>
+        </ul>
+        <button ng-repeat="action in resourceActions" ng-click="takeAction(action)">{{action.title}}</button>
+    </div>
+    <div ng-controller="PopulationController">
+        <ul>
+            <li ng-repeat="job in jobs">
+                <span>{{job.title}}</span>
+                <span>{{job.count}}</span>
+                <span ng-hide="$first">
+                    <span ng-click="assignWorker(job)">+</span>
+                    <span ng-click="unassignWorker(job)">-</span>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div ng-controller="BuildingController">
+        <ul>
+            <li ng-repeat="building in buildings">
+                <span>{{building.title}}</span>
+                <span>{{building.count}}</span>
+                <span ng-click="build(building)">+</span>
+            </li>
+        </ul>
+    </div>
+    <button ng-click="reset()">Reset</button>
+</div>
+

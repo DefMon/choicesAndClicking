@@ -1,0 +1,674 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Resource",
+				"ResourceServiceMock"
+			],
+			[
+				"resourcesMo",
+				"resourceActionsMock"
+			],
+			[
+				"pop",
+				"popCapAmount"
+			],
+			[
+				"popC",
+				"popCapOperator"
+			],
+			[
+				"season",
+				"seasonInterval"
+			],
+			[
+				"relockEvents",
+				"relockEventsFromUpgrade"
+			],
+			[
+				"unlockEvent",
+				"unlockEventsFromUpgrade"
+			],
+			[
+				"preq",
+				"prerequesiteBuildings"
+			],
+			[
+				"Bui",
+				"BuildingActionView"
+			],
+			[
+				"Buildin",
+				"BuilderActionsCollection"
+			],
+			[
+				"Building",
+				"BuildingActionView"
+			],
+			[
+				"do",
+				"doOperation"
+			],
+			[
+				"sub",
+				"subtractFromCount"
+			],
+			[
+				"succ",
+				"sufficientResources"
+			],
+			[
+				"REs",
+				"ResourceCollection"
+			],
+			[
+				"re",
+				"ResourceCollection"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/app/alone/alone.tpl.html",
+			"settings":
+			{
+				"buffer_size": 1114,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/app/alone/aloneMain.js",
+			"settings":
+			{
+				"buffer_size": 1781,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 118.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/gameConfig/jobDefinitions.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/gameConfig/buildingDefinitions.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/buildings/buildingController.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/buildings/buildingService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/population/populationService.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/buildings/buildingService.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/build/src/app/alone/population/populationService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/gameState/seasonService.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/population/populationService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/gameState/seasonService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/posts/Week 0",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/buildings/buildingController.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/buildings/_buildings.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/population/populationController.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/resources/resourceController.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/resources/resourceService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/population/_population.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/population/populationController.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/resources/resourceService.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/gameConfig/resourceDefinitions.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/aloneMain.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/gameConfig/gameConstants.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/gameState/_gameState.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/resources/resourceController.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/actions/ActionService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/actions/_actions.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/services/resourceService.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/resources/_resources.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/services/resourceService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/services/testService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/services/testService.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/karma/karma-unit.tpl.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/gameConfig/objectDefinitions.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/resources/resources.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/services/villageService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/services/villageService.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/alone.tpl.html",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/app.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/resources/action.tpl.html",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/services/actionService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/common/underscore.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/build.config.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/build/src/app/alone/aloneMain.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/services/services.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/build/src/app/alone/aloneConfig/objectDefintions.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/alone/gameConfig/gameConfig.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/build/src/app/alone/resources/resources.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/build/src/app/alone/services/villageService.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/objects/resources.object.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/home/home.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/Gruntfile.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/build/src/app/app.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/build/vendor/angularLocalStorage/src/angularLocalStorage.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/vendor/angular/angular.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/ng-alone.sublime-project",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/home/home.tpl.html",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/common/README.md",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/tools.md",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/index.html",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/bin/index.html",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/assets/README.md",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/karma/karma-unit.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/src/app/app.spec.js",
+		"/C/Users/Ben/Dropbox/Coding projects/ng-alone/README.md",
+		"/C/Users/Ben/Downloads/README.txt",
+		"/C/Users/Ben/Dropbox/Coding projects/angular tutorial/angular-phonecat/app/js/services.js",
+		"/C/Users/Ben/Dropbox/Coding projects/angular tutorial/angular-phonecat/app/js/directives.js",
+		"/C/Users/Ben/AppData/Roaming/npm/node_modules/karma/README.md",
+		"/C/Users/Ben/Dropbox/Coding projects/late rooms/js/src/searchResults.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/TO DO.txt",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/utilities/events.utils.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/globalValues.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/Controllers/Workers.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/requireConfig.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/objects/buildings.object.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/Controllers/Culture.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/utilities/effects.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/Controllers/Villager.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/utilities/utilities.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/action.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/builderAction.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/utilities/maths.utils.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/Controllers/Buildings.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/Collections/feedEvents.collection.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/models/FeedEvent.model.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/Controllers/Feed.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone Version 1/scripts/views/feed/feed.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/Controllers/Game.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone Version 1/scripts/models/feed.event.model.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone Version 1/scripts/views/feed/feed.event.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/feedEvent.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/objects/gameEvents.object.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/objects/village.object.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/gameGlobalVariables.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/events/game.event.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/templates/village.template.html",
+		"/C/Users/Ben/Dropbox/Apps/My.DropPages/alone.droppages.com/Public/scripts/objects/gameEvents.object.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/game.view.js",
+		"/C/Users/Ben/AppData/Local/Temp/Temp1_CE People Modified Addon (CEPM) 2.0.zip/CE People Modified Addon 2.0/a readme file.txt",
+		"/C/Users/Ben/Dropbox/Apps/My.DropPages/alone.droppages.com/Public/scripts/objects/buildings.object.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/buildings/building.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/buildings/building.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/gameObjects.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/models/game.event.model.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/events/notification.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/village.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/utilities/utils.game.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/templates/job.template.html",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/models/job.model.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/templates/game.base.template.html",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/templates/action.button.template.html",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/templates/building.template.html",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/templates/upgrade.template.html",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/aloneMinimal.css",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/upgrades/culture.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/game.html",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/upgrades/upgrade.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/resources/resource.action.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/models/village.model.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/upgrades/upgrade.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/resources/resource.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/collections/upgrades.collection.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/collections/village.collection.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/collections/culture.collection.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/views/jobs/job.controller.view.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/collections/game.events.collection.js",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/templates/notification.template.html",
+		"/C/Users/Ben/Dropbox/Coding projects/alone/scripts/models/building.model.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\Ben\\Dropbox\\Coding projects\\ng-alone",
+			"C:\\Users\\Ben\\Dropbox\\Coding projects\\alone\\scripts\\views",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"            ",
+			");\n",
+			"storage.get",
+			"function",
+			");\n",
+			"village.resources",
+			"VillageService",
+			");\n",
+			"Karma-unit",
+			");\n",
+			"    VillageService.gainResource('food', 5);\n    expect(resourcesMock.food.count).toBe(5)",
+			"\n    expect(resourcesMock.food.count).toBe(5);",
+			");\n",
+			"storage",
+			"jsunit",
+			"spec",
+			");\n",
+			"vendor",
+			"js",
+			"',\n",
+			"ResourceController",
+			"'\n",
+			"vendor_files.js",
+			"',\n",
+			"plusOne",
+			"config.configure",
+			"home",
+			"app_files",
+			"app_files.js",
+			"home",
+			"home.tpl",
+			"atpl",
+			"app_files",
+			"tpl",
+			"plusOne",
+			"coffee",
+			"recess",
+			"coff",
+			"recess",
+			"build.dest",
+			"recess.build.dest",
+			"recess",
+			"coffee",
+			"view",
+			"'ui.route'",
+			"save",
+			"rememberEventData",
+			"rememberdata",
+			"doOper",
+			"},",
+			"populationIntervalActions",
+			"gainPopulation",
+			"populationIntervalActions",
+			"onbuil",
+			"\");\n",
+			"'));\n",
+			"cid",
+			"Utils",
+			"var resource",
+			"'G'",
+			"model",
+			"relational",
+			"passive:income",
+			");\n",
+			"alert",
+			"'}\n",
+			"),\n",
+			">\n",
+			"title",
+			"}\n",
+			"resource:passiveincome",
+			"'feed:event'",
+			"decreaseCount",
+			"increaseCount",
+			"decreaseCount",
+			"'));\n",
+			");\n",
+			"input",
+			"action:disable",
+			"',\n",
+			"underscore",
+			"'));\n",
+			"backbone",
+			"'}),\n",
+			"		\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"resources",
+			"ResourceService",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/app/alone/alone.tpl.html",
+					"settings":
+					{
+						"buffer_size": 1114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1112,
+								1112
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 52.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/app/alone/aloneMain.js",
+					"settings":
+					{
+						"buffer_size": 1781,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1475,
+								1475
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/faith_000/Desktop/shipwreck/Shipwrecked.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 156.0,
+	"status_bar_visible": true
+}
