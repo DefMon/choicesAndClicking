@@ -1,4 +1,4 @@
-angular.module( 'ngAlone.aloneConfig')
+angular.module( 'ngAlone.population')
 
 .factory('jobDefinitions', function(){
     return {

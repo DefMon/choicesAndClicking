@@ -1,4 +1,4 @@
-angular.module( 'ngAlone.aloneConfig')
+angular.module( 'ngAlone.buildings')
 
 .factory('buildingDefinitions', function(){
     return {
