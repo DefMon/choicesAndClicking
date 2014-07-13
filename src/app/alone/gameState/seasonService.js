@@ -7,7 +7,6 @@ angular.module('ngAlone.gameState')
         seasonId++;
         if (seasonId === gameConstants.seasons.length) {
             seasonId = 0;
-            console.log('Seasons change!');
         }
         storage.set('season', seasonId);
     }

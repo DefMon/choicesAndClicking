@@ -15,10 +15,13 @@
 angular.module( 'ngAlone', [
     'ui.state',
     'ngAlone.aloneConfig',
+    'ngAlone.utilities',
     'ngAlone.resources',
     'ngAlone.buildings',
+    'ngAlone.upgrades',
     'ngAlone.population',
-    'ngAlone.gameState'
+    'ngAlone.gameState',
+    'ngAlone.events'
 ])
 
 /**
@@ -43,19 +46,25 @@ angular.module( 'ngAlone', [
  * And of course we define a controller for our route.
  */
 .controller( 'AloneCtrl',
-function AloneController( $scope, storage, $interval, SeasonService, PopulationService ) {
+function AloneController( $scope, storage, $interval, $timeout, SeasonService, PopulationService, EventsService, mathsUtils ) {
+    'use strict';
+    function scheduleRandomEvent() {
+        $timeout(function(){
+            if(!EventsService.getCurrentEvent()) {
+                EventsService.setCurrentEvent(EventsService.getAvailableEvent());
+            }
+        }, mathsUtils.randBetween(1, 10)*1000)
+            .then(scheduleRandomEvent);
+    }
     $scope.reset = function() {
       storage.clearAll();
       location.reload();
     };
-
-
     $interval(function(){
         PopulationService.collectIncome();
         SeasonService.tick();
     }, 10000);
+    scheduleRandomEvent();
 
-})
-
-;
+});
 

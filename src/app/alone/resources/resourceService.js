@@ -3,6 +3,26 @@ angular.module( 'ngAlone.resources')
 function(storage, _, resourceDefinitions, resourceActionDefintions){
     var resources = storage.get('villageResources') || resourceDefinitions;
     var resourceActions = storage.get('resourceActions') || resourceActionDefintions;
+    var actionObservers = [];
+    var resourceObservers = [];
+
+    function updateResourceAction(resourceAction, updates) {
+        _.each(updates, function(value, key) {
+            resourceAction[key] = value;
+        });
+        _.each(actionObservers, function(callback){
+            callback();
+        });
+    }
+    function updateResource(resource, updates) {
+        _.each(updates, function(value, key) {
+            resource[key] = value;
+        });
+        _.each(resourceObservers, function(callback){
+            callback();
+        });
+    }
+
     var publicFunctions = {
         getAvailableResources: function(){
             return _.where(resources, {unlocked: true});
@@ -51,12 +71,18 @@ function(storage, _, resourceDefinitions, resourceActionDefintions){
             return allAvailable;
         },
         unlockResource: function(resourceName){
-            resources[resourceName].unlocked = true;
+            updateResource(resources[resourceName], {unlocked: true});
             storage.set('villageResources', resources);
         },
         unlockResourceAction: function(actionName){
-            resourceActions[actionName].unlocked = true;
+            updateResourceAction(resourceActions[actionName], {unlocked: true});
             storage.set('resourceActions', resourceActions);
+        },
+        addResourceActionObserver: function(callback){
+            actionObservers.push(callback);
+        },
+        addResourceObserver: function(callback){
+            resourceObservers.push(callback);
         }
     };
     storage.set('villageResources', resources);

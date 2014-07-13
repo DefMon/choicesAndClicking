@@ -7,14 +7,14 @@ angular.module( 'ngAlone.population')
             cost: {},
             income: {food: 1},
             count: 10,
-            unlocked: true
+            unlocked: false
         },
         getWood: {
             title: 'Lumberjack',
             cost: {},
-            income: {food: 1},
+            income: {wood: 1},
             count: 0,
-            unlocked: true
+            unlocked: false
         }
     };
 })

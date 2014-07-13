@@ -1,13 +1,11 @@
-/**
- * Tests sit right alongside the file they are testing, which is more intuitive
- * and portable than separating `src` and `test` directories. Additionally, the
- * build process will exclude all `.spec.js` files from the build
- * automatically.
- */
+/*globals describe, jasmine, it, beforeEach, expect, inject, _, module*/
 describe('BuildingService', function (){
     var BuildingService,
         ResourceServiceMock,
         storageMock,
+        mathsUtilsMock,
+        PopulationServiceMock,
+        buildingEffectsMock,
         buildingsMock;
   
     beforeEach(function (){
@@ -15,12 +13,18 @@ describe('BuildingService', function (){
     // load the module.
         module('ngAlone.buildings', function($provide){
             storageMock = jasmine.createSpyObj('storage', ['get', 'set']);
+            mathsUtilsMock = jasmine.createSpyObj('mathsUtils', ['applyOperation']);
             ResourceServiceMock = jasmine.createSpyObj('ResourceService', ['loseResources']);
+            PopulationServiceMock = jasmine.createSpyObj('PopulationService', ['increasePopCap']);
             buildingsMock = {
                 dwelling: {
                     title: 'Hut',
                     count: 0,
-                    unlocked: true
+                    unlocked: true,
+                    variables: {
+                        size: 1
+                    },
+                    onBuild: ['increasePopCap']
                 },
                 foodProducer: {
                     title: 'Farm',
@@ -33,16 +37,16 @@ describe('BuildingService', function (){
                     unlocked: false
                 }
             };
+            buildingEffectsMock = jasmine.createSpyObj('buildingEffects', ['increasePopCap']);
             $provide.value('storage', storageMock);
             $provide.value('_', _);
             $provide.value('buildingDefinitions', buildingsMock);
+            $provide.value('buildingEffects', buildingEffectsMock);
             $provide.value('ResourceService', ResourceServiceMock);
+            $provide.value('PopulationService', PopulationServiceMock);
+            $provide.value('mathsUtils', mathsUtilsMock);
         });
-    
-        // inject your service for testing.
-        // The _underscores_ are a convenience thing
-        // so you can have your variable name be the
-        // same as your injected service.
+
         inject(function(_BuildingService_) {
             BuildingService = _BuildingService_;
             expect(storageMock.get).toHaveBeenCalledWith('villageBuildings');
@@ -68,6 +72,19 @@ describe('BuildingService', function (){
             ResourceServiceMock.loseResources.andReturn(false);
             BuildingService.build(buildingsMock.dwelling);
             expect(buildingsMock.dwelling.count).toBe(0);
+        });
+
+        it('runs the onBuild function of a building when it is built', function(){
+            ResourceServiceMock.loseResources.andReturn(true);
+            BuildingService.build(buildingsMock.dwelling);
+            expect(buildingEffectsMock.increasePopCap).toHaveBeenCalledWith(buildingsMock.dwelling.variables, PopulationServiceMock);
+        });
+
+        it('can upgrade a building given its name', function(){
+            mathsUtilsMock.applyOperation.andReturn(3);
+            BuildingService.upgradeBuildingWithName('dwelling', {size: ['+',2]});
+            expect(mathsUtilsMock.applyOperation).toHaveBeenCalledWith(1, '+', 2);
+            expect(buildingsMock.dwelling.variables.size).toBe(3);
         });
     });
 

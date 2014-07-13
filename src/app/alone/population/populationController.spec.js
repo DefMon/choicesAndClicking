@@ -2,11 +2,12 @@ describe('Population Controller', function(){
         var PopulationController,
             PopulationServiceMock,
             jobsMock,
+            populationVariablesMock,
             $scope;
   
     beforeEach(function (){
         PopulationServiceMock = jasmine.createSpyObj('PopulationService',
-            ['getAvailableJobs', 'gainVillager', 'assignWorker', 'unassignWorker']);
+            ['getAvailableJobs', 'gainVillager', 'assignWorker', 'unassignWorker', 'getPopulationVariables']);
         jobsMock = {
             getFood: {
                 title: 'Forager',
@@ -23,12 +24,16 @@ describe('Population Controller', function(){
                 unlocked: true
             }
         };
+        populationVariablesMock = {
+            maxPop: 10
+        };
         module('ngAlone.population');
 
         inject(function($rootScope, $controller) {
             $scope = $rootScope.$new();
 
             PopulationServiceMock.getAvailableJobs.andReturn(jobsMock);
+            PopulationServiceMock.getPopulationVariables.andReturn(populationVariablesMock);
 
             PopulationController = $controller('PopulationController', {
                 $scope: $scope,
@@ -37,8 +42,9 @@ describe('Population Controller', function(){
         });
     });
 
-    it('sets jobs on the scope', function(){
+    it('sets variables on the scope', function(){
         expect($scope.jobs).toBe(jobsMock);
+        expect($scope.populationVariables).toBe(populationVariablesMock);
     });
 
     it('can assign workers to a job', function(){

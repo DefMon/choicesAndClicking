@@ -1,5 +1,10 @@
 <div>
     <h1>ALONE!</h1>
+    <div ng-controller="EventsController">
+        <h2>Event</h2>
+        <p>{{currentEvent.text}}</p>
+        <button ng-repeat="choice in currentEvent.choices" ng-click="makeChoice($index)">{{choice.text}}</button>
+    </div>
     <div ng-controller="ResourceController">
         <ul>
             <li ng-repeat="resource in resources"><span>{{resource.title}}</span><span>{{resource.count}}</li>
@@ -8,6 +13,7 @@
     </div>
     <div ng-controller="PopulationController">
         <ul>
+            <p>Max Pop <span ng-bind="populationVariables.maxPop"></span></p>
             <li ng-repeat="job in jobs">
                 <span>{{job.title}}</span>
                 <span>{{job.count}}</span>
@@ -27,6 +33,22 @@
             </li>
         </ul>
     </div>
+    <div ng-controller="UpgradesController">
+        <p>Available Upgrades</p>
+        <ul>
+            <li ng-repeat="upgrade in availableUpgrades">
+                <span>{{upgrade.title}}</span>
+                <span ng-click="build(upgrade)">+</span>
+            </li>
+        </ul>
+        <p>Built Upgrades</p>
+        <ul>
+            <li ng-repeat="upgrade in builtUpgrades">
+                <span>{{upgrade.title}}</span>
+            </li>
+        </ul>
+    </div>
+
     <button ng-click="reset()">Reset</button>
 </div>
 

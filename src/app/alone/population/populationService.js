@@ -1,10 +1,21 @@
 angular.module( 'ngAlone.population')
-.service('PopulationService', ['storage', '_', 'jobDefinitions', 'ResourceService',
-function(storage, _, jobDefinitions, ResourceService){
+.service('PopulationService', ['storage', '_', 'mathsUtils', 'gameConstants', 'jobDefinitions', 'ResourceService',
+function(storage, _, Maths, gameConstants, jobDefinitions, ResourceService){
+    'use strict';
     var jobs = storage.get('villageWorkers') || jobDefinitions;
-    //TODO - Move this definition into game constants
-    var workerPool = jobs.getFood;
+    var populationVariables = storage.get('populationVariables') || gameConstants.defaultPopulationVariables;
+    var workerPool = jobs[gameConstants.workerPoolName];
     var publicFunctions = {
+        getPopulationVariables: function() {
+            return populationVariables;
+        },
+        getMaxPop: function() {
+            return populationVariables.maxPop;
+        },
+        setMaxPop: function(newPop) {
+            populationVariables.maxPop = newPop;
+            storage.set('populationVariables', populationVariables);
+        },
         getAvailableJobs: function(){
             return _.where(jobs, {unlocked: true});
         },
@@ -51,6 +62,26 @@ function(storage, _, jobDefinitions, ResourceService){
             });
 
             ResourceService.gainResources(totalIncome);
+        },
+        upgradeJobWithName: function(jobName, improvements){
+            var job = jobs[jobName];
+            function recursivelyApplyUpgrade(properties, parent) {
+                _.each(properties, function(propertyValue, propertyName){
+                    var existingValue;
+                    if (_.isArray(propertyValue)) {
+                        existingValue = parent[propertyName] || 0;
+                        parent[propertyName] = Maths.applyOperation(existingValue, propertyValue[0], propertyValue[1]);
+                    } else {
+                        if(!parent[propertyName]){
+                            parent[propertyName] = {};
+                        }
+                        recursivelyApplyUpgrade(propertyValue, parent[propertyName]);
+                    }
+                });
+            }
+            if(job) {
+                recursivelyApplyUpgrade(improvements, job);
+            }
         }
     };
 

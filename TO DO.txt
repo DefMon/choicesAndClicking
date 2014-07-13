@@ -1,13 +1,3 @@
 TO DO
 
-BUGS
-    Tooltip vanishes until click after a building is updated
-
-SYSTEM DESIGN
-    Consider introducing Kommand for Object functions (like onbuild for buildings) once Alex releases it
-
-GAME DESIGN
-    Cost curve isn't intuative, why would your second hut need more resources to build? Consider alternative resource sinks.
-
-FUNCTIONALITY
     

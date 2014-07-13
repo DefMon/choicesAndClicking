@@ -8,6 +8,7 @@ function($scope, PopulationService) {
         PopulationService.unassignWorker(job);
     };
     $scope.jobs = PopulationService.getAvailableJobs();
+    $scope.populationVariables = PopulationService.getPopulationVariables();
 
 }]);
 

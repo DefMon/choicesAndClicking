@@ -1,3 +1,4 @@
+/*global describe: true, beforeEach: true, expect: true, it: true, module: true, inject: true, jasmine: true*/
 describe('Resource Controller', function(){
       var ResourceController,
           ResourceServiceMock,
@@ -7,7 +8,7 @@ describe('Resource Controller', function(){
   
     beforeEach(function (){
         ResourceServiceMock = jasmine.createSpyObj('ResourceService', 
-            ['getAvailableResources', 'getAvailableResourceActions', 'loseResources', 'gainResources']);
+            ['getAvailableResources', 'getAvailableResourceActions', 'loseResources', 'gainResources', 'addResourceActionObserver', 'addResourceObserver']);
         resourcesMock = {
             food: {title: 'Food', count: 0, unlocked: true},
             wood: {title: 'Wood', count: 0, unlocked: true},
@@ -36,6 +37,11 @@ describe('Resource Controller', function(){
     it('sets resources and resourceActions on the scope', function(){
         expect($scope.resources).toBe(resourcesMock);
         expect($scope.resourceActions).toBe(resourceActionsMock);
+    });
+
+    it('registers observers for resourceActions and resources', function(){
+        expect(ResourceServiceMock.addResourceActionObserver).toHaveBeenCalled();
+        expect(ResourceServiceMock.addResourceObserver).toHaveBeenCalled();
     });
 
     it('pays cost and gains income when a resource action is taken', function(){

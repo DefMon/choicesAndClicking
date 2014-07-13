@@ -145,6 +145,16 @@ describe('ResourceService', function (){
         it('can return a single resource', function(){
             expect(ResourceService.getResourceAction('getRope')).toBe(resourceActionsMock.getRope);
         });
+
+        it('can register an observer for updates to the resource actions', function(){
+            var callbackSpy = jasmine.createSpy('callback');
+            var callbackSpyTheSecond = jasmine.createSpy('callback2');
+            ResourceService.addResourceActionObserver(callbackSpy);
+            ResourceService.addResourceActionObserver(callbackSpyTheSecond);
+            ResourceService.unlockResourceAction('getRope');
+            expect(callbackSpy).toHaveBeenCalled();
+            expect(callbackSpyTheSecond).toHaveBeenCalled();
+        });
     });
 });
 

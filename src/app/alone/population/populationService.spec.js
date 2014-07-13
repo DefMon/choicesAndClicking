@@ -1,13 +1,10 @@
-/**
- * Tests sit right alongside the file they are testing, which is more intuitive
- * and portable than separating `src` and `test` directories. Additionally, the
- * build process will exclude all `.spec.js` files from the build
- * automatically.
- */
+/*globals describe, beforeEach, it, jasmine, expect, inject*/
 describe('PopulationService', function (){
     var PopulationService,
         ResourceServiceMock,
         storageMock,
+        mathsUtilsMock,
+        gameConstantsMock,
         jobsMock;
   
     beforeEach(function (){
@@ -15,8 +12,10 @@ describe('PopulationService', function (){
     // load the module.
         module('ngAlone.population', function($provide){
             storageMock = jasmine.createSpyObj('storage', ['get', 'set']);
-            ResourceServiceMock = jasmine.createSpyObj('ResourceServiece',
+            ResourceServiceMock = jasmine.createSpyObj('ResourceService',
                 ['gainResources', 'loseResources']);
+
+            mathsUtilsMock = jasmine.createSpyObj('mathsUtils', ['applyOperation']);
             jobsMock = {
                 getFood: {
                     name: 'getFood',
@@ -43,10 +42,18 @@ describe('PopulationService', function (){
                     unlocked: false
                 }
             };
+            gameConstantsMock = {
+                defaultPopulationVariables: {
+                    maxPop: 10
+                },
+                workerPoolName: 'getFood'
+            };
             $provide.value('storage', storageMock);
             $provide.value('_', _);
             $provide.value('jobDefinitions', jobsMock);
             $provide.value('ResourceService', ResourceServiceMock);
+            $provide.value('gameConstants', gameConstantsMock);
+            $provide.value('mathsUtils', mathsUtilsMock);
         });
     
         // inject your service for testing.
@@ -108,6 +115,31 @@ describe('PopulationService', function (){
             PopulationService.collectIncome();
             expect(ResourceServiceMock.loseResources).toHaveBeenCalledWith({food:1});
             expect(ResourceServiceMock.gainResources).toHaveBeenCalledWith({food:1, wood: 2});
+        });
+
+        it('can get and set the max Pop', function(){
+            PopulationService.setMaxPop(7);
+            expect(PopulationService.getMaxPop()).toBe(7);
+            expect(storageMock.set).toHaveBeenCalledWith('populationVariables', PopulationService.getPopulationVariables());
+        });
+
+        it('can upgrade a named job', function(){
+            mathsUtilsMock.applyOperation.andReturn(3);
+            PopulationService.upgradeJobWithName('getFood', {income: {food: ['+',2]}});
+            expect(mathsUtilsMock.applyOperation).toHaveBeenCalledWith(1, '+', 2);
+            expect(jobsMock.getFood.income.food).toBe(3);
+        });
+
+        it('can apply multiple upgrades at once', function(){
+            mathsUtilsMock.applyOperation.andReturn(3);
+            PopulationService.upgradeJobWithName('getFood', {income: {food: ['+',2], wood: ['+',3]}, cost: {rope: ['-', 1]}});
+            expect(mathsUtilsMock.applyOperation).toHaveBeenCalledWith(1, '+', 2);
+            expect(mathsUtilsMock.applyOperation).toHaveBeenCalledWith(0, '+', 3);
+            expect(mathsUtilsMock.applyOperation).toHaveBeenCalledWith(0, '-', 1 );
+            expect(jobsMock.getFood.income.food).toBe(3);
+            expect(jobsMock.getFood.income.wood).toBe(3);
+            expect(jobsMock.getFood.cost.rope).toBe(3);
+
         });
     });
 
